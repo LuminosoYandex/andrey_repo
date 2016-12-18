@@ -10,6 +10,9 @@
 			echo $text;
 		}
 	}
+	if ($_SERVER['REQUEST_METHOD']=='POST'){
+		echo $_POST["comment"];
+	}
 ?>
 <!doctype html>
 <html lang="en">
@@ -20,6 +23,7 @@
 <body>
 	<form action="test_edit.php" method="post">
 		<textarea name="comment" cols="40" rows="3"></textarea>
+		<input type="submit" value="Отправить">
 	</form>
 </body>
 </html>
