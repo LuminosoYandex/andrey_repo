@@ -5,5 +5,7 @@
 	function minus($x,$y){
 		return $x-$y;
 	}
-	echo minus(4,3);
+	$a = plus(4,3);
+	$b = plus(24,13);
+	echo ($a,$b);
 ?>
